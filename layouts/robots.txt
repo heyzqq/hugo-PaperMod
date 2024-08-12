@@ -1,6 +1,14 @@
 User-agent: *
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
-Disallow:
+Allow: /
+Disallow: /tags
+Disallow: /archives
+Disallow: /categories
+Disallow: /search
+Disallow: .jpg$
+Disallow: .jpeg$
+Disallow: .gif$
+Disallow: .png$
 {{- else }}
 Disallow: /
 {{- end }}
