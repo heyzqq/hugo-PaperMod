@@ -5,10 +5,6 @@ Disallow: /tags
 Disallow: /archives
 Disallow: /categories
 Disallow: /search
-Disallow: .jpg$
-Disallow: .jpeg$
-Disallow: .gif$
-Disallow: .png$
 {{- else }}
 Disallow: /
 {{- end }}
